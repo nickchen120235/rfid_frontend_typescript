@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Paper, TextField, Button } from '@material-ui/core'
 
-import { SubmitDataProps, GetCardIDProps } from '../types/add_card'
+import { DataProps, GetCardIDProps } from '../types/page'
 import { styles } from '../style/page'
 
 const AddCard = () => {
@@ -9,7 +9,7 @@ const AddCard = () => {
   const [ card, setCard ] = useState('')
 
   const handleSubmit = () => {
-    const data: SubmitDataProps = {
+    const data: DataProps = {
       name: name,
       cardID: card,
       added: (new Date()).toLocaleString('en-US')

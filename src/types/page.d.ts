@@ -1,4 +1,4 @@
-export interface SubmitDataProps {
+export interface DataProps {
   name: string,
   cardID: string,
   added: string
